@@ -1,7 +1,4 @@
-:root{
-    --main_padd : 20px;
-    --main_blue: #83A0EC;
-}
+
 * {
     box-sizing: border-box;
 }
