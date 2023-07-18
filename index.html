@@ -12,7 +12,7 @@
         consectetur adipisicing elit. Mollitia, consectetur unde similique itaque vel pariatur placeat tempora dignissimos.
          Reprehenderit quaerat ducimus molestias ipsam a exercitationem molestiae, et beatae. Porro, cupiditate?</p>
 
-    <button>CLICK</button>
+    <button class="click">CLICK</button>
     
     <style>
         html, body{
@@ -27,5 +27,16 @@
             
         }   
     </style>
+
+    <script>
+        let tg = window.Telegram.WebApp;
+        let btn_save = document.querySelector('.click')
+
+        btn_save.addEventListener('click', e=>{
+            e.preventDefault()
+            tg.sendData('Hello world')
+        })
+
+    </script>
 </body>
 </html>
