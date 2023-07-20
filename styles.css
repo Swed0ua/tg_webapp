@@ -1,6 +1,8 @@
 :root{
     --main_padd : 20px;
     --main_blue: #83A0EC;
+    --sec_bg_color : #FCEDED;
+    --main_bg_color: white;
 }
 
 * {
@@ -11,7 +13,7 @@ html, body {
     padding: 0;
     margin: 0;
     font-size: 16px;
-    background-color: var(--secondary_bg_color);
+    background-color: var(--sec_bg_color);
 }
 .container {
     display: flex;
@@ -55,7 +57,7 @@ html, body {
 
 .setts__area {
     flex-grow: 1;
-    background-color: var(--bg_color);
+    background-color: var(--main_bg_color);
     margin: var(--main_padd);
     padding: var(--main_padd);
     border-radius: var(--main_padd);
@@ -85,13 +87,13 @@ html, body {
     width: 100%;
     border: none;
     outline: none;
-    padding: 5px 15px;
+    padding: 10px 15px;
+    background-color: #00000010;
     border-radius: var(--main_padd);
     -webkit-border-radius: var(--main_padd);
     -moz-border-radius: var(--main_padd);
     -ms-border-radius: var(--main_padd);
     -o-border-radius: var(--main_padd);
-    background-color: var(--secondary_bg_color);
 }
 
 /** BTNS SETT **/
@@ -116,11 +118,6 @@ html, body {
 .btns__area .btn__save {
     background-color: var(--main_blue);
     color: #fff;
-}
-
-.btns__area .btn__save {
-    background-color: var(--main_blue);
-    color: var(--text_color);
 }
 
 .header__cancel {

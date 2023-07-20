@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Hello world</h1>
-    <p>Lorem, ipsum dolor sit amet 
-        consectetur adipisicing elit. Mollitia, consectetur unde similique itaque vel pariatur placeat tempora dignissimos.
-         Reprehenderit quaerat ducimus molestias ipsam a exercitationem molestiae, et beatae. Porro, cupiditate?</p>
-
-    <button class="click">CLICK</button>
-    
-    <style>
-        html, body{
-            background-color:var(--secondary_bg_color);
-        }
-        p {
-            color: var(--hint_color);
-        }
-        button {
-            background-color: var(--button_text_color);
-            color: var(--button_color);
-            
-        }   
-    </style>
-
-    <script>
-        let tg = window.Telegram.WebApp;
-        let btn_save = document.querySelector('.click')
-
-        btn_save.addEventListener('click', e=>{
-            e.preventDefault()
-            alert('You are ready')
-            tg.sendData('Hello world')
-        })
-
-    </script>
+    <div class="container">
+        <div class="header">
+            <div class="header__title">settings</div>
+            <div class="btn btn__cancel header__cancel">cancel</div>
+        </div>
+        <div class="setts__area">
+            <div class="input__item">
+                <label for="link__input">link</label>
+                <input type="text" id="link__input" name="link__input">
+            </div>
+            <div class="input__item">
+                <label for="com__input">upwout count</label>
+                <input type="number" id="com__input" name="com__input">
+            </div>
+            <div class="input__item">
+                <label for="hot_pos">hot position</label>
+                <input type="number" id="hot_pos" name="hot_pos">
+            </div>
+            <div class="input__item">
+                <label for="work_time">time work</label>
+                <input type="number" id="work_time" name="work_time">
+            </div>
+        </div>
+        <div class="btns__area">
+            <div class="btn btn__save">save</div>
+            <div class="btn btn__cancel">cancel</div>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
 </body>
 </html>
